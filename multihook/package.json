@@ -1,0 +1,18 @@
+{
+  "name": "multihook",
+  "version": "0.1.0",
+  "description": "Real-time peer-to-peer multiplayer for 2D and 3D web apps: WebRTC + STUN/TURN networking, reliable/unreliable packet control, entity interpolation, and grab/hold/release/post interaction primitives.",
+  "type": "module",
+  "main": "src/index.js",
+  "exports": {
+    ".": "./src/index.js"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.js",
+    "signaling-server": "node server/signaling-server.js"
+  },
+  "optionalDependencies": {
+    "ws": "^8.18.0"
+  },
+  "license": "MIT"
+}
